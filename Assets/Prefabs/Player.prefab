@@ -215,6 +215,8 @@ GameObject:
   - component: {fileID: 8257141669913342107}
   - component: {fileID: 5710762539460661926}
   - component: {fileID: 7110776501286897259}
+  - component: {fileID: 7441809067114269550}
+  - component: {fileID: 6103107946075021891}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -356,6 +358,59 @@ MonoBehaviour:
   syncInterval: 0.1
   rotationController: {fileID: 6287675862115791811}
   offset: 90
+--- !u!114 &7441809067114269550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230963199072639791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734b48bea0b204338958ee3d885e11f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  clientAuthority: 1
+  sendInterval: 0.05
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  interpolatePosition: 1
+  interpolateRotation: 1
+  interpolateScale: 0
+  bufferTimeMultiplier: 1
+  bufferSizeLimit: 64
+  catchupThreshold: 4
+  catchupMultiplier: 0.1
+  onlySyncOnChange: 1
+  bufferResetMultiplier: 5
+  positionSensitivity: 0.01
+  rotationSensitivity: 0.01
+  scaleSensitivity: 0.01
+  showGizmos: 0
+  showOverlay: 0
+  overlayColor: {r: 0, g: 0, b: 0, a: 0.5}
+  target: {fileID: 3641879529560684664}
+--- !u!114 &6103107946075021891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230963199072639791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43d3ce8f06cfe244cb5ba16de4b94100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  bullet: {fileID: 8163318824197134738, guid: 68d92dac45804e84e94f6374ae8bee8f, type: 3}
+  gunPoint: {fileID: 2391998078421071608}
+  reload: 0.5
+  damage: 1
 --- !u!1 &1311470510141540380
 GameObject:
   m_ObjectHideFlags: 0

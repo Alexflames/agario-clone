@@ -16,6 +16,6 @@ public class MovementController : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.velocity = direction * speed;
+        rb.velocity = transform.TransformVector(direction) * speed;
     }
 }
